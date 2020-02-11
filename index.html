@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Etiquetas HTML5</title>
+</head>
+
+<body>
+    <div>Sección</div>
+    El contenedor <span id="rojo">sin salto de línea</span> se marca son span.
+    <br>
+    <!--Salto de línea-->
+    <p>Esto es un párrafo</p>
+    <p>Esto es otro párrafo</p>
+    <h1>Encabezado de tipo 1</h1>
+    <h2>Encabezado de tipo 2</h2>
+    <h6>Encabezado de tipo 6</h6>
+    <!--ETIQUETAS SEMÁNTICAS https://www.w3schools.com/html/html5_semantic_elements.asp-->
+    <article>Esto es un artículo</article>
+    <article>Esto es otro artículo</article>
+    <header>Cabecera</header>
+    <header>Otra cabecera</header>
+    <footer>Pie de documento</footer>
+    <aside>Lateral del documento</aside>
+    <nav>Suele incluir el menú de navegación de la parte superior</nav>
+    <section>Delimita un sección</section>
+    <figure>
+        <img src="escudo.png" alt="Escudo nuevo del Atlético de Madrid">
+        <figcaption>Escudo del Atlético de Madrid</figcaption>
+    </figure>
+    <!--TABLAS-->
+    <table id="tablaNormal">
+        <tr>
+            <!--FILAS-->
+            <th>Dorsal</th>
+            <th>Nombre</th>
+            <th>Goles</th>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><span class="azul">M</span><span class="rojo">e</span><span class="azul">s</span><span
+                    class="rojo">s</span><span class="azul">i</span></td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Benzema</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Benzema</td>
+            <td>4</td>
+            <td>OTRA CELDA</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Benzema</td>
+            <td></td>
+            <td>OTRA CELDA</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Benzema</td>
+            <td colspan="2">4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Benzema</td>
+            <td></td>
+            <td rowspan="2">OTRA CELDA</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Benzema</td>
+            <td>x</td>
+        </tr>
+    </table>
+    <h1>Otro formato de tabla - Semantic</h1>
+    <!-- Table with thead, tfoot, and tbody -->
+    <table id="salarios">
+        <thead>
+            <tr>
+                <th>Jugador</th>
+                <th class="derecha">Salario (€)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Jugador</td>
+                <td class="derecha">Salario ($)</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Messi</td>
+                <td class="derecha">40.000.000</td>
+            </tr>
+            <tr>
+                <td>Morata</td>
+                <td class="derecha">5.200.000</td>
+            </tr>
+            <tr>
+                <td>Ramos</td>
+                <td class="derecha" >10.400.000</td>
+            </tr>
+            <tr>
+                <td>Messi</td>
+                <td class="derecha">40.000.000</td>
+            </tr>
+            <tr>
+                <td>Morata</td>
+                <td class="derecha">5.200.000</td>
+            </tr>
+            <tr>
+                <td>Ramos</td>
+                <td class="derecha" >10.400.000</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>

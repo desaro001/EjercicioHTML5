@@ -1,0 +1,44 @@
+#rojo {
+    color:red;
+}
+.azul {
+    color:blue;
+}
+.rojo {
+    color:red;
+}
+
+#salarios {
+    width: 100%;
+}
+
+#salarios thead, #salarios tfoot {
+    background-color: teal;
+    color:white;
+}
+
+#salarios th, #salarios td{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#salarios tbody td {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.derecha {
+    text-align: right;
+}
+
+#salarios tbody tr:nth-child(even) {
+    background: #CCC;
+}
+#salarios tbody tr:nth-child(odd) {
+    background:sandybrown;
+}
+
+#tablaNormal td {
+    border-style: solid;
+}
+

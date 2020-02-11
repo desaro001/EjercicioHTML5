@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo2.css">
+    <title>Document</title>
+    <script>
+        function mostrar() {
+            console.log("MOSTRANDO");
+            var elrango = document.querySelector("#dimensiones");
+            document.querySelector("#valor").innerHTML = elrango.value;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- ESTO ES UN COMENTARIO-->
+    <form action="calculador.php" method="GET" id="fVarios">
+        <input type="text" name="nombre" id="textNombre" placeholder="Introduce tu nombre" size="50" maxlength="10"><br>
+        <input type="number" name="nombre" id="nombre" placeholder="Introduce tu edad" min="10" max="20"
+            required="true"><br>
+        <input type="email" name="nombre" id="nombre" placeholder="Introduce tu email" size="50" maxlength="10"><br>
+        <input type="password" name="nombre" id="nombre" placeholder="Introduce tu password" size="50"
+            maxlength="10"><br>
+        <input type="date" name="nombre" id="nombre" value="2020-05-02" min="2018-01-01" max="2050-01-02"><br>
+        <input type="time"><br>
+        <input type="color" name="nombre" id="color" value="#888888"><br>
+        <input type="range" id="dimensiones" min="10" max="100" step="5" oninput="mostrar()" onchange="mostrar()"><span
+            id="valor"></span><br>
+        <input type="file"><br>
+        <input type="hidden" name="dni" value="08104383X">
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="carlist">
+            <option value="-1"  selected="true">(Selecciona una opción)</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">El coche de Torrente</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br>
+
+        <label for="elcampeon">Real Madrid</label>
+        <input type="radio" name="equipo" value="Rm" id="elcampeon">
+        <label for="equipo">Atlético de Madrid</label>
+        <input type="radio" name="equipo" value="Atm" checked>
+        <label for="equipo">Otros</label>
+        <input type="radio" name="equipo" value="Otro">
+        <br>
+
+        <label for="equipo">Real Madrid</label>
+        <input type="checkbox" name="equipoRM" checked>
+        <label for="equipo">Atlético de Madrid</label>
+        <input type="checkbox" name="equipoAM" checked>
+        <label for="equipo">Otros</label>
+        <input type="checkbox" name="equipoOtro">
+        <br>
+
+        <textarea name="textolargo" rows="10" cols="50" placeholder="Introduce texto"></textarea><br>
+
+        <input type="reset" value="Limpiar">
+        <input type="submit" value="Verificar">
+    </form>
+
+
+</body>
+
+</html>
